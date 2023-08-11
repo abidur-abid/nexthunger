@@ -1,0 +1,384 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*=================================================
+all the class name include with 'custom' word,
+but tag name has no change
+===================================================*/
+
+/*=================================================
+style for the whole website and all screen
+===================================================*/
+body{
+  background-color: white;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  
+  
+}
+
+.laptop-header-parent-position{
+  position: relative;
+}
+.laptop-header-position{
+  position: sticky;
+  top: 0px;
+}
+.mobile-menu-parent-position{
+  position: relative;
+  
+}
+
+.color{
+  /* color: #808080; */
+  color: black;
+}
+.custom-background{
+  background-color: black;
+}
+.index{
+  z-index: 9999;
+}
+
+/*=================================================
+header,footer
+===================================================*/
+
+header,footer{
+  background-color: #6C63FF;
+}
+footer{
+  margin-top: 35px;
+}
+.header-custom-row, .footer-custom-row{
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/*=================================================
+common website feature like logo menu image
+===================================================*/
+.custom-logo{
+  width: 250px;
+  height: auto;
+}
+.custom-image{
+  width: 100%;
+  height: auto;  
+}
+.custom-laptop-menu{
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.custom-laptop-menu a{
+  font-size: 18px;
+  font-weight: bold;
+  
+}
+
+.mobile-menu a:hover, .custom-laptop-menu a:hover, .page:hover{
+ border-bottom: 3px solid white;
+}
+.custom-mobile-menu{
+  font-size: 25px;
+  margin-top: 15px;
+  
+}
+.mobile-menu-position{
+  position: absolute;
+  top: 20px;
+  right: 0px;
+  background-color: #6C63FF;
+}
+.alpha-link{
+  display: flex;
+  justify-content: left;
+  gap: 15px;
+}
+/*=================================================
+css box model
+===================================================*/
+section{
+  margin-top: 35px;
+}
+.custom-container{
+  padding: 5px 10px;
+  width: 1024px;
+  margin: 0 auto;
+}
+.custom-row{
+   padding: 5px 10px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.custom-column{
+   padding: 5px 10px;
+}
+/*=================================================
+different types of font size according to tag name
+===================================================*/
+h1{
+   font-size: 72px;
+   font-weight: bold;
+}
+h2{
+   font-size: 60px;
+   font-weight: bold;
+}
+h3{
+   font-size: 35px;
+   font-weight: bold;
+}
+h4{
+   font-size: 20px;
+   font-weight: bold;
+}
+p,button,a{
+   font-size: 18px;
+}
+h1,h2,h3,h4,p,b{
+  margin: 6px 0px;
+}
+/*=================================================
+tablet screen======================================
+===================================================*/
+@media only screen and (max-width: 768px) and (min-width: 641px)   {
+  section{
+      margin-top: 0px;
+  }
+  .custom-logo{
+      width: 200px;
+      height: auto;
+   }
+   .custom-image{
+      width: auto;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+          
+  }
+   .custom-laptop-menu{
+      display: none;
+   }
+   .custom-mobile-menu{
+      display: inline;
+      font-size: 23px;
+   }
+   .custom-container{
+      padding: 0px 50px;
+      width: 100%;
+      margin: 0 auto;
+   }
+   .custom-row{
+      display: inline;
+       padding: 0px 10px;
+       width: 100%;
+       margin: 0 auto;
+   }
+   .custom-column{
+      width: 100%;
+       padding: 0px 10px;
+   }
+   
+   h1{
+      font-size: 60px;
+      font-weight: bold;
+      text-align: left;
+  }
+  h2{
+      font-size: 48px;
+      font-weight: bold;
+    
+  }
+  h3{
+      font-size: 36px;
+      font-weight: bold;
+      
+  }
+  h4,p,button{
+      font-size: 18px;
+      
+  }
+   h1,h2,h3,h4,p,b{
+      margin: 4px 0px;
+      text-align: center;
+      
+   }
+
+  .alpha-link{
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+  }
+  .alpha-logo{
+      margin: 0 auto;
+  }
+  .alpha-button{   
+      display: flex;
+      justify-content: center;
+  }
+  .alpha-text{
+     
+      text-align: left;
+  }
+  .last-column{
+      margin-top: 40px;
+  }
+  .alpha-img{
+      margin-top: 40px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  .footer-logo{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* .company{
+      padding: 40px;
+  } */
+   /* dynamic code end from here and it will be change project by project*/ 
+}
+
+
+/*=================================================
+mobile screen=====================================
+===================================================*/
+@media only screen and (max-width: 640px) and (min-width: 0px) {
+  section{
+      margin-top: 0px;
+  }
+  .custom-logo{
+      width: 200px;
+      height: auto;
+   }
+   .custom-image{
+      width: auto;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+          
+  }
+   .custom-laptop-menu{
+      display: none;
+   }
+   .custom-mobile-menu{
+      display: inline;
+      font-size: 23px;
+   }
+   .custom-container{
+      padding: 5px 50px;
+      width: 100%;
+      margin: 0 auto;
+   }
+   .custom-row{
+      display: inline;
+       padding: 5px 10px;
+       width: 100%;
+       margin: 0 auto;
+   }
+   .custom-column{
+      width: 100%;
+       padding: 5px 10px;
+   }
+   
+   h1{
+      font-size: 48px;
+      font-weight: bold;
+  }
+  h2{
+      font-size: 36px;
+      font-weight: bold;
+  }
+  h3{
+      font-size: 18px;
+      font-weight: bold;
+  }
+  h4,p,button{
+      font-size: 16px;
+  }
+   h1,h2,h3,h4,p,b{
+      margin: 2px 0px;
+      text-align: center;
+   }
+   .alpha-link{
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+  }
+   .alpha-logo{
+      margin: 0 auto;
+  }
+  .alpha-button{   
+      display: flex;
+      justify-content: center;
+  }
+  .alpha-text{
+     
+      text-align: left;
+  }
+  .last-column{
+      margin-top: 40px;
+  }
+  .alpha-img{
+      margin-top: 40px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  .footer-logo{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /*
+  
+   /* dynamic code end from here and it will be change project by project*/ 
+  }
+
+  /***************************delete**************************/
+
+
+
+
+
+/*=================================================
+here are all dynamic css code which will be change 
+different project by project
+===================================================*/
+.social{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+ 
+}
+.button{
+  border: 4px solid black;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.button:hover{
+  background-color: black;
+  color: white;
+}
+
+.custom-border{
+  border-bottom: 5px solid black;
+  border-top: 5px solid black;
+  
+}
+
+.accordion, .accordion__button{
+  color: black !important;
+}
+
+/*React Tabs*/
+.react-tabs__tab-list {
+  display: flex;
+  justify-content: center;
+}
